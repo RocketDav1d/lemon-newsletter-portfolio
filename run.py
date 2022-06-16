@@ -6,7 +6,7 @@ from email.message import EmailMessage
 
 import requests
 
-API_KEY = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJsZW1vbi5tYXJrZXRzIiwiaXNzIjoibGVtb24ubWFya2V0cyIsInN1YiI6InVzcl9xeUdQUkNDOTlZTEh3blFUbnlscURjblB5ZHpzTnNac0w5IiwiZXhwIjoxNjU1MDQ4ODgxLCJpYXQiOjE2NDk4NjQ4ODEsImp0aSI6ImFwa19xeUdSVDc3RERNTGZiUVhXVnRTS2N0a3IzWkZUNnpod1REIiwibW9kZSI6InBhcGVyIn0.yEHvIFrd_DjcC_vfKLZrJtfssHCUT0EGOk6cm70WRrw"
+API_KEY = "your-API-Key"
 
 request = requests.get("https://paper-trading.lemon.markets/v1/positions/", 
                        headers={"Authorization": "Bearer " + API_KEY})
@@ -56,7 +56,7 @@ total_investment = "€ " + str(total_investment)
 
 
 EMAIL_ADDRESS = "david.korn@code.berlin"
-EMAIL_PASSWORD = "wkcoonhqvonmvccr"
+EMAIL_PASSWORD = "your-pasword"
 
 msg = EmailMessage()
 msg["Subject"] = "Your daily portfolio update"
